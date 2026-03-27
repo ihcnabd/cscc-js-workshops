@@ -150,5 +150,8 @@ showResult(sub);
 - **Static vs Dynamic typing:**
   - In **C** (static typing): you must declare the type of a variable explicitly
   - In **JavaScript** (dynamic typing): the type is inferred automatically at runtime
+- **Where to place the `<script>` tag:**
+  - Placing it in the `<head>` can cause **render blocking** — the browser pauses HTML parsing to download and execute the JS, which delays the page from loading, especially with heavy scripts
+  - The recommended practice is to place it at the **end of `<body>`**, so the HTML is fully parsed and visible to the user before JS runs
 
 ---
